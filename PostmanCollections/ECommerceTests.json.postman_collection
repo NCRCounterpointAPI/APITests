@@ -1,0 +1,59 @@
+{
+	"id": "60de880a-4af2-8569-1dbc-537ccf767fab",
+	"name": "ECommerceTests",
+	"description": "",
+	"order": [
+		"0b3b2606-fdab-cbef-407b-8ef57d03b09e",
+		"603220f7-ce99-a4cf-a3c8-3d47eb91ef29"
+	],
+	"folders": [],
+	"timestamp": 1431460834226,
+	"synced": false,
+	"owner": "43287",
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "0b3b2606-fdab-cbef-407b-8ef57d03b09e",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "http://localhost:81/EC",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431614797459,
+			"name": "GET ECommerce",
+			"description": "",
+			"collectionId": "60de880a-4af2-8569-1dbc-537ccf767fab",
+			"synced": false
+		},
+		{
+			"id": "603220f7-ce99-a4cf-a3c8-3d47eb91ef29",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "http://localhost:81/ECCategories",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431614802012,
+			"name": "GET ECommerce Categories",
+			"description": "",
+			"collectionId": "60de880a-4af2-8569-1dbc-537ccf767fab",
+			"synced": false
+		}
+	]
+}

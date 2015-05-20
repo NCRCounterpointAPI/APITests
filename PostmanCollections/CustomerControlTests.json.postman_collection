@@ -1,0 +1,39 @@
+{
+	"id": "433172f2-a278-bf2f-2ce4-d691e4a724c9",
+	"name": "CustomerControlTests",
+	"description": "",
+	"order": [
+		"03469633-7cd0-aab2-26d2-49322a2aae2f"
+	],
+	"folders": [],
+	"timestamp": 1428427845823,
+	"synced": false,
+	"owner": "43287",
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "03469633-7cd0-aab2-26d2-49322a2aae2f",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "http://localhost:81/CustomerControl",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431628289328,
+			"name": "GET Customer Control",
+			"description": "",
+			"collectionId": "433172f2-a278-bf2f-2ce4-d691e4a724c9",
+			"responses": [],
+			"synced": false
+		}
+	]
+}

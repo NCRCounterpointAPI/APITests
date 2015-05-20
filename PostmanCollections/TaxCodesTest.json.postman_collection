@@ -1,0 +1,38 @@
+{
+	"id": "1e64a414-00f4-4dfc-6a8b-df2e97135990",
+	"name": "TaxCodesTest",
+	"description": "",
+	"order": [
+		"0a29995f-e39d-e5a7-9660-1c6e74a3b7dc"
+	],
+	"folders": [],
+	"timestamp": 1429283474906,
+	"synced": false,
+	"owner": "43287",
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "0a29995f-e39d-e5a7-9660-1c6e74a3b7dc",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "http://localhost:81/TaxCodes",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431623508217,
+			"name": "GET TaxCodes",
+			"description": "",
+			"collectionId": "1e64a414-00f4-4dfc-6a8b-df2e97135990",
+			"synced": false
+		}
+	]
+}

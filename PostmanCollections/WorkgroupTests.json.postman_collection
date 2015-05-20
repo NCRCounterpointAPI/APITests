@@ -1,0 +1,58 @@
+{
+	"id": "098ef83e-a144-2783-f8a8-d30ec86ce078",
+	"name": "WorkgroupTests",
+	"description": "",
+	"order": [
+		"b3bb9bd7-f1d4-0bf7-f0aa-e8569b292189",
+		"17979ec7-a9ff-f140-5844-c797252aaaf5"
+	],
+	"folders": [],
+	"timestamp": 1429283391790,
+	"synced": false,
+	"owner": "43287",
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "17979ec7-a9ff-f140-5844-c797252aaaf5",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "http://localhost:81/Workgroup/{{BAD_WRK_ID}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Nice Message\"] = respData.Message === 'Workgroup record does not exist for WRKGRP_ID ' + data.BAD_WRK_ID;\ntests[\"Error Code\"] = respData.ErrorCode === 'ERROR_RECORD_NOT_FOUND';",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431628819545,
+			"name": "GET Workgroup By ID Not Found",
+			"description": "",
+			"collectionId": "098ef83e-a144-2783-f8a8-d30ec86ce078",
+			"synced": false
+		},
+		{
+			"id": "b3bb9bd7-f1d4-0bf7-f0aa-e8569b292189",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "http://localhost:81/Workgroup/{{WRK_ID}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"WRKGRP ID Matches\"] = respData.SY_WRKGRP.WRKGRP_ID === data.WRK_ID;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431628903659,
+			"name": "GET Workgroup By ID",
+			"description": "",
+			"collectionId": "098ef83e-a144-2783-f8a8-d30ec86ce078",
+			"synced": false
+		}
+	]
+}
