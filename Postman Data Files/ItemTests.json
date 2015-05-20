@@ -1,0 +1,26 @@
+[
+	{
+		"ITEM_NO" : "BURGER",
+		"SERIAL_ITEM_NO": "ADM-LASER",
+		"SERIAL_NO": "1111",
+		"BAD_ITEM_NO": "NOTREAL",
+		"CAT_COD": "FOOD",
+		"BAD_CAT_COD": "FAKE",
+		"DIM_ITEM": "FLEECE",
+		"BAD_DIM_ITEM": "FAKE",
+		"LOC_ID": "MOTO"
+	},
+	{
+		"ITEM_NO" : "Shirt",
+		"SERIAL_ITEM_NO": "ADM-LASER",
+		"SERIAL_NO": "1111",
+		"BAD_ITEM_NO": "FAKE",
+		"CAT_COD": "FOOD",
+		"BAD_CAT_COD": "NOTREAL",
+		"DIM_ITEM": "FLEECE",
+		"BAD_DIM_ITEM": "FAKE",
+		"LOC_ID": "MOTO"
+	},
+	{
+	}
+]

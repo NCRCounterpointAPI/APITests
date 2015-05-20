@@ -1,0 +1,14 @@
+[
+	{
+		"GFC_COD": "GC10",
+		"GFC_NO": "100001",
+		"INV_GFC_NO": "NOTREAL"
+	},
+	{
+		"GFC_COD": "GC",
+		"GFC_NO": "1000010",
+		"INV_GFC_NO": "FALSE"
+	},
+	{
+	}
+]

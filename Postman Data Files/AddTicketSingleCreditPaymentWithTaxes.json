@@ -1,0 +1,30 @@
+[
+	{
+		"STR_ID" : "100",
+		"STA_ID" : "100-1",
+		"DRW_ID" : "1",
+		"ITEM_NO" : "BURGER",
+		"PAY_COD" : "VISA",
+		"PAY_COD_DESC" : "VISA",
+		"CR_CARD_NO" : "4111111111111111",
+		"CR_CARD_NAM" : "JOHN DOE",
+		"AVS_ZIP_COD" : "32606",
+		"CR_CARD_EXP_DAT" : "12/2015",
+		"USR_ID": "MGR"
+	},
+	{
+		"STR_ID" : "100",
+		"STA_ID" : "100-1",
+		"DRW_ID" : "1",
+		"ITEM_NO" : "Shirt",
+		"PAY_COD" : "VISA",
+		"PAY_COD_DESC" : "VISA",
+		"CR_CARD_NO" : "4111111111111111",
+		"CR_CARD_NAM" : "JOHN DOE",
+		"AVS_ZIP_COD" : "32606",
+		"CR_CARD_EXP_DAT" : "12/2015",
+		"USR_ID": "MGR"
+	},
+	{
+	}
+]

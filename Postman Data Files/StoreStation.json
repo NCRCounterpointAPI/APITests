@@ -1,0 +1,20 @@
+[
+	{
+		"STR_ID": "100",
+		"STA_ID": "100-1",
+		"BAD_STA_ID": "THOR",
+		"BAD_STR_ID": "HULK"
+	},
+	{
+		"STR_ID": "MAIN",
+		"STA_ID": "1",
+		"BAD_STA_ID": "Blooper",
+		"BAD_STR_ID": "Shenanigans"
+	},
+	{
+		"STR_ID": "30",
+		"STA_ID": "30-1",
+		"BAD_STA_ID": "Super",
+		"BAD_STR_ID": "Troopers"
+	}
+]
