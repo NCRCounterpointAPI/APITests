@@ -1,0 +1,38 @@
+{
+	"id": "405e8a44-12ed-15e0-ab75-b04a2af730a2",
+	"name": "CompanyTests",
+	"description": "",
+	"order": [
+		"f8010540-05bb-99cc-df3b-37a95e08a6c0"
+	],
+	"folders": [],
+	"timestamp": 1429283035495,
+	"synced": false,
+	"owner": "43287",
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "f8010540-05bb-99cc-df3b-37a95e08a6c0",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "http://localhost:81/Company",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Has DB_CTL\"] = responseBody.has(respData.SY_COMP.DB_CTL.DB_VER);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431628606083,
+			"name": "GET Company",
+			"description": "",
+			"collectionId": "405e8a44-12ed-15e0-ab75-b04a2af730a2",
+			"synced": false
+		}
+	]
+}
