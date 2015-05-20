@@ -1,0 +1,58 @@
+{
+	"id": "0ad2454e-1e7e-a135-cb29-adf78206b270",
+	"name": "APIKeysTests",
+	"description": "",
+	"order": [
+		"ff237819-b6ef-15bc-f11c-4802bf31a0dd",
+		"8954fab0-fd67-5139-c235-071e78522131"
+	],
+	"folders": [],
+	"timestamp": 1431375870292,
+	"synced": false,
+	"owner": "43287",
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "8954fab0-fd67-5139-c235-071e78522131",
+			"headers": "Authorization: {{sysAdminAuth}}\n",
+			"url": "http://localhost:81/APIKeys",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431375937427,
+			"name": "Get API Keys Success",
+			"description": "",
+			"collectionId": "0ad2454e-1e7e-a135-cb29-adf78206b270",
+			"synced": false
+		},
+		{
+			"id": "ff237819-b6ef-15bc-f11c-4802bf31a0dd",
+			"headers": "Authorization: {{userAuth}}\n",
+			"url": "http://localhost:81/APIKeys",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 403\"] = responseCode.code === 403;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431375914569,
+			"name": "Get API Keys 403",
+			"description": "",
+			"collectionId": "0ad2454e-1e7e-a135-cb29-adf78206b270",
+			"synced": false
+		}
+	]
+}
