@@ -1,5 +1,7 @@
 # APITests
-This repository contains the JetPacks tests we use for automated testing of the API. We'll soon be sharing the DB we run these tests against as well. These tests form the bulk of the testing done against the API server, so they will reflect what we test and expect to work. Our goal is for the community to help us improve our testing, and therefore the API quality, continually by submitting pull requests containing additinal test cases.
+This repository contains the [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) tests we use for automated testing of the API. We'll soon be sharing the DB we run these tests against as well. These tests form the bulk of the testing done against the API server, so they will reflect what we test and expect to work. Our goal is for the community to help us improve our testing, and therefore the API quality, continually by submitting pull requests containing additinal test cases. There are two main folders in this repository
+- **Postman collections:** This folder contains an export of the postman tests that can be imported into the postman tool. Some of these tests may require data files that provide input data for the tests.
+- **Postman Data Files:** This folder contains data files that are inputs for many of the tests in the Postman collections.
 
 When submitting a pull request for a test case, please be sure to try to follow the existing format and conventions used in other tests. Failure to do so will result in delays due to the effort to rework the test, or a rejection of the test altogether.
 
