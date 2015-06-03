@@ -11,3 +11,34 @@ The tests also serve as a great repository of samples illustrating how to use th
 - How can I share a problem I've found with the API in a way that makes it easy for NCR to see and reproduce the issue?
 - How can I improve the testing NCR does to ensure a key usage scenario is always tested going forward?
 
+## Running Postman Tests
+These tests are intended to be run using the "Test runner" feature of Postman, and can be run manually (with the [Jetpacks](https://www.getpostman.com/docs/jetpacks_intro) add on), or automated via the [Newman](https://www.getpostman.com/docs/newman_intro) command line collection runner for Postman.
+
+### Setting up environments
+The tests use the [Environments](https://www.getpostman.com/docs/environments) feature of Postman to allow the same test to be easily modified to run in different test environments. In order to use these tests, you must setup an environment with the following values:
+ - Authorization
+  - This will contiain the basic authorization header *value*. Should be `basic <your base64 encoded credentials here>`
+ - APIKey
+  - This is the APIKey used to run the tests. It doesn't matter what key, as long as it's valid on the server you are testing against.
+ - Protocol
+  - Should be `https://` for SSL protected servers
+ - Server
+  - The name of your server as it should appear in the URI/web address
+ - Port
+  - The port your server is running on
+ - Content-Type
+  - Should be `application/json`
+   
+### Executing a test
+The following steps can be used to manually execute a test in Postman, assuming the JetPacks addon is installed:
+1. Sync this repository to the machine from which the tests will be run, so you have a local copy of all test files.
+2. Launch Postman.
+3. Ensure you have a proper environment setup as described above.
+4. Click the "Import" button at the top of the Postman application.
+5. Select "Choose Files" and navigate to the local copy of the `Postman Collections` folder that was synced from this repository.
+6. Select a `*.json.postman_collection` file containing a test collection. The collection will show up on the "Collections" tab on the left hand panel in Postman.
+7. Click the "Runner" button to launch the test runner.
+8. Select the test collection to run, as well as the environment.
+9. If the test collection requires a data file for input, click "choose file" and navigate to the `Postman Data Files` folder to select the proper test file (NOTE: We need to add documentation or a naming convention to make this more evident/obvious)
+10. Click "Start Test Run" to execute the tests
+9. 
