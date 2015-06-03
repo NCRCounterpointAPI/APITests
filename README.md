@@ -31,14 +31,14 @@ The tests use the [Environments](https://www.getpostman.com/docs/environments) f
    
 ### Executing a test
 The following steps can be used to manually execute a test in Postman, assuming the JetPacks addon is installed:
-1. Sync this repository to the machine from which the tests will be run, so you have a local copy of all test files.
-2. Launch Postman.
-3. Ensure you have a proper environment setup as described above.
-4. Click the "Import" button at the top of the Postman application.
-5. Select "Choose Files" and navigate to the local copy of the `Postman Collections` folder that was synced from this repository.
-6. Select a `*.json.postman_collection` file containing a test collection. The collection will show up on the "Collections" tab on the left hand panel in Postman.
-7. Click the "Runner" button to launch the test runner.
-8. Select the test collection to run, as well as the environment.
-9. If the test collection requires a data file for input, click "choose file" and navigate to the `Postman Data Files` folder to select the proper test file (NOTE: We need to add documentation or a naming convention to make this more evident/obvious)
-10. Click "Start Test Run" to execute the tests
-9. 
+- Sync this repository to the machine from which the tests will be run, so you have a local copy of all test files.
+- Launch Postman.
+- Ensure you have a proper environment setup as described above.
+- Click the "Import" button at the top of the Postman application.
+- Select "Choose Files" and navigate to the local copy of the `Postman Collections` folder that was synced from this repository.
+- Select a `*.json.postman_collection` file containing a test collection. The collection will show up on the "Collections" tab on the left hand panel in Postman.
+- Click the "Runner" button to launch the test runner.
+- Select the test collection to run, as well as the environment.
+- If the test collection requires a data file for input, click "choose file" and navigate to the `Postman Data Files` folder to select the proper test file (NOTE: We need to add documentation or a naming convention to make this more evident/obvious)
+- Click "Start Test Run" to execute the tests
+ 
