@@ -23,7 +23,7 @@
 		{
 			"id": "6e504e37-c3fb-ed5e-e84e-66d193b79eeb",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/GiftCardCode/{{GFC_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/GiftCardCode/{{GFC_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -44,7 +44,7 @@
 		{
 			"id": "755d0c4c-30f2-375e-8bdb-095567004491",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/GiftCard/{{INV_GFC_NO}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/GiftCard/{{INV_GFC_NO}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -64,7 +64,7 @@
 		{
 			"id": "8126fab6-a1bb-e553-6828-f047c5292fb8",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/GiftCard/{{GFC_NO}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/GiftCard/{{GFC_NO}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -84,7 +84,7 @@
 		{
 			"id": "b7d994c5-fd3a-d3d9-a2e8-a9f805610471",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/GiftCards",
+			"url": "{{protocol}}://{{server}}:{{port}}/GiftCards",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -104,7 +104,7 @@
 		{
 			"id": "b90a5e99-aea6-895a-d0b8-24d964aac72f",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/GiftCardCodes",
+			"url": "{{protocol}}://{{server}}:{{port}}/GiftCardCodes",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

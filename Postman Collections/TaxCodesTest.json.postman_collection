@@ -18,7 +18,7 @@
 		{
 			"id": "0a29995f-e39d-e5a7-9660-1c6e74a3b7dc",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/TaxCodes",
+			"url": "{{protocol}}://{{server}}:{{port}}/TaxCodes",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

@@ -20,7 +20,7 @@
 		{
 			"id": "0b3b2606-fdab-cbef-407b-8ef57d03b09e",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/EC",
+			"url": "{{protocol}}://{{server}}:{{port}}/EC",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -39,7 +39,7 @@
 		{
 			"id": "603220f7-ce99-a4cf-a3c8-3d47eb91ef29",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/ECCategories",
+			"url": "{{protocol}}://{{server}}:{{port}}/ECCategories",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

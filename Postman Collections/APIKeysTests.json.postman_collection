@@ -19,7 +19,7 @@
 		{
 			"id": "8954fab0-fd67-5139-c235-071e78522131",
 			"headers": "Authorization: {{sysAdminAuth}}\n",
-			"url": "http://localhost:81/APIKeys",
+			"url": "{{protocol}}://{{server}}:{{port}}/APIKeys",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -38,7 +38,7 @@
 		{
 			"id": "ff237819-b6ef-15bc-f11c-4802bf31a0dd",
 			"headers": "Authorization: {{userAuth}}\n",
-			"url": "http://localhost:81/APIKeys",
+			"url": "{{protocol}}://{{server}}:{{port}}/APIKeys",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

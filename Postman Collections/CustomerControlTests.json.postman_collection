@@ -18,7 +18,7 @@
 		{
 			"id": "03469633-7cd0-aab2-26d2-49322a2aae2f",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/CustomerControl",
+			"url": "{{protocol}}://{{server}}:{{port}}/CustomerControl",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

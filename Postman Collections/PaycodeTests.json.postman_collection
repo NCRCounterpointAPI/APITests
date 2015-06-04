@@ -25,7 +25,7 @@
 		{
 			"id": "3779f7fc-858a-6185-69e3-ac5ee1857491",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/PayCode/{{PAY_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/PayCode/{{PAY_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -44,7 +44,7 @@
 		{
 			"id": "53cc0468-6bbe-40da-9750-f637ff42fe18",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/PayCodes",
+			"url": "{{protocol}}://{{server}}:{{port}}/PayCodes",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -63,7 +63,7 @@
 		{
 			"id": "8535bf30-6b45-2a3f-7e95-2da5ddb9e80c",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/PayCode/{{PAY_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/PayCode/{{PAY_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -82,7 +82,7 @@
 		{
 			"id": "992778ea-1aae-2c08-22c7-679f09e36e0c",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/PayCode/{{PAY_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/PayCode/{{PAY_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -101,7 +101,7 @@
 		{
 			"id": "ac832f76-d82a-6b1a-5ca4-c3efa42e55ab",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/PayCode/VISA",
+			"url": "{{protocol}}://{{server}}:{{port}}/PayCode/VISA",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PATCH",
@@ -121,7 +121,7 @@
 		{
 			"id": "e886b642-9c54-563c-a0ca-6a854f62056a",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/PayCode/{{BAD_PAY_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/PayCode/{{BAD_PAY_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -140,7 +140,7 @@
 		{
 			"id": "fbbd18a6-4096-cb3c-cd8c-d21121da6177",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/PayCode/{{PAY_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/PayCode/{{PAY_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PATCH",

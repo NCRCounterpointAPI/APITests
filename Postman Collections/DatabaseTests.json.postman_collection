@@ -10,8 +10,7 @@
 			"description": "These tests should be passing in company.user credentials which are invalid for Database calls.\nThese should all return a 403 response for Invalid Credentials.",
 			"write": true,
 			"order": [
-				"4984e44a-6805-4ef4-c176-7a6c57a1cedc",
-				"ce95a5bc-d79d-c10e-0355-e1a386f4f2eb"
+				"4984e44a-6805-4ef4-c176-7a6c57a1cedc"
 			],
 			"collection_name": "DatabaseTests",
 			"collection_owner": "43287",
@@ -26,8 +25,7 @@
 			"description": "",
 			"write": true,
 			"order": [
-				"dc9e3f26-c306-81f3-7e11-f50e42b297e7",
-				"7f6dcec5-d9b4-fc3a-78d0-0ec411758256"
+				"dc9e3f26-c306-81f3-7e11-f50e42b297e7"
 			],
 			"collection_name": "DatabaseTests",
 			"collection_owner": "43287",
@@ -38,18 +36,17 @@
 		}
 	],
 	"timestamp": 1431371375049,
-	"synced": false,
 	"owner": "43287",
-	"sharedWithTeam": false,
-	"subscribed": false,
 	"remoteLink": "",
 	"public": false,
-	"write": true,
+	"createdAt": null,
+	"updatedAt": null,
+	"synced": false,
 	"requests": [
 		{
 			"id": "4984e44a-6805-4ef4-c176-7a6c57a1cedc",
 			"headers": "Authorization: {{userAuth}}\n",
-			"url": "http://localhost:81/Databases",
+			"url": "{{protocol}}://{{server}}:{{port}}/Databases",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -63,50 +60,14 @@
 			"name": "Get Databases",
 			"description": "",
 			"collectionId": "17083266-922a-57e9-a454-ac479db7fe07",
-			"synced": false
-		},
-		{
-			"id": "7f6dcec5-d9b4-fc3a-78d0-0ec411758256",
-			"headers": "Authorization: {{sysAdminAuth}}\n",
-			"url": "http://localhost:81/Database/2",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431372100173,
-			"name": "Get Database By ID",
-			"description": "",
-			"collectionId": "17083266-922a-57e9-a454-ac479db7fe07",
-			"synced": false
-		},
-		{
-			"id": "ce95a5bc-d79d-c10e-0355-e1a386f4f2eb",
-			"headers": "Authorization: {{userAuth}}\n",
-			"url": "http://localhost:81/Database/2",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "tests[\"Status code is 403\"] = responseCode.code === 403;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431372026124,
-			"name": "Get Database By ID",
-			"description": "",
-			"collectionId": "17083266-922a-57e9-a454-ac479db7fe07",
-			"synced": false
+			"synced": false,
+			"owner": "43287",
+			"folder": "3c65d749-87fb-4b14-e001-9b159ea6b9fe"
 		},
 		{
 			"id": "dc9e3f26-c306-81f3-7e11-f50e42b297e7",
 			"headers": "Authorization: {{sysAdminAuth}}\n",
-			"url": "http://localhost:81/Databases",
+			"url": "{{protocol}}://{{server}}:{{port}}/Databases",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -120,7 +81,9 @@
 			"name": "Get Databases",
 			"description": "",
 			"collectionId": "17083266-922a-57e9-a454-ac479db7fe07",
-			"synced": false
+			"synced": false,
+			"owner": "43287",
+			"folder": "4c5ff70c-842a-8a03-43a6-9b4c9544e5f1"
 		}
 	]
 }

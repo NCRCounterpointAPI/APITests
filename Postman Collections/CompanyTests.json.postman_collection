@@ -18,7 +18,7 @@
 		{
 			"id": "f8010540-05bb-99cc-df3b-37a95e08a6c0",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Company",
+			"url": "{{protocol}}://{{server}}:{{port}}/Company",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

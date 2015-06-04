@@ -11,18 +11,17 @@
 	],
 	"folders": [],
 	"timestamp": 1431439425901,
-	"synced": false,
 	"owner": "43287",
-	"sharedWithTeam": false,
-	"subscribed": false,
 	"remoteLink": "",
 	"public": false,
-	"write": true,
+	"createdAt": null,
+	"updatedAt": null,
+	"synced": false,
 	"requests": [
 		{
 			"id": "21c98c9e-a92f-b2e1-9139-2db4034c3f3b",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Document/{{DocId2}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Document/{{DocId2}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -36,12 +35,13 @@
 			"name": "Get Order By DOC_ID",
 			"description": "",
 			"collectionId": "b4b0f2be-7359-2906-6450-05a9c037a330",
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		},
 		{
 			"id": "316a42c6-e2ac-8046-8070-f36ab6e15da5",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/InventoryControl",
+			"url": "{{protocol}}://{{server}}:{{port}}/InventoryControl",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -61,7 +61,7 @@
 		{
 			"id": "464c2cc1-1445-9ff6-0547-da84fe2b3497",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{ITEM_NO}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -81,7 +81,7 @@
 		{
 			"id": "8d987e1d-456a-f23e-1dbc-716d930462ec",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Document/{{DocId1}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Document/{{DocId1}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -95,28 +95,28 @@
 			"name": "Get Ticket By DOC_ID",
 			"description": "",
 			"collectionId": "b4b0f2be-7359-2906-6450-05a9c037a330",
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		},
 		{
 			"id": "9df0c161-c921-a761-a903-9f5629736d40",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/Document",
+			"url": "{{protocol}}://{{server}}:{{port}}/Document",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
 			"data": [],
 			"dataMode": "raw",
 			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;\n\npostman.setEnvironmentVariable(\"DocId1\", (respData.Documents.filter(\n    function (el)\n    {\n        return el.reference == 'Ticket'; \n    }\n    )[0].DOC_ID));\n\npostman.setEnvironmentVariable(\"DocId2\", (respData.Documents.filter(\n    function (el)\n    {\n        return el.reference == 'Order'; \n    }\n    )[0].DOC_ID));\n\nvar path = \"http://localhost:81/Document/\";\n\ntests[\"Link 1\"] = respData.Documents[0].Link.uri === path + environment.DocId1;\ntests[\"Link 2\"] = respData.Documents[1].Link.uri === path + environment.DocId2;",
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;\n\npostman.setEnvironmentVariable(\"DocId1\", (respData.Documents.filter(\n    function (el)\n    {\n        return el.reference == 'Ticket'; \n    }\n    )[0].DOC_ID));\n\npostman.setEnvironmentVariable(\"DocId2\", (respData.Documents.filter(\n    function (el)\n    {\n        return el.reference == 'Order'; \n    }\n    )[0].DOC_ID));\n\nvar path = environment.protocol + \"://\" + environment.server + \":\" + environment.port + \"/Document/\";\n\ntests[\"Link 1\"] = respData.Documents[0].Link.uri === path + environment.DocId1;\ntests[\"Link 2\"] = respData.Documents[1].Link.uri === path + environment.DocId2;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1431610896449,
+			"time": 1433442510655,
 			"name": "Add Order",
 			"description": "",
 			"collectionId": "b4b0f2be-7359-2906-6450-05a9c037a330",
 			"synced": false,
-			"rawModeData": "{\r\n  \"PS_DOC_HDR\": {\r\n    \"STR_ID\": \"{{STR_ID}}\",\r\n    \"STA_ID\": \"{{STA_ID}}\",\r\n    \"DRW_ID\": \"{{DRW_ID}}\",\r\n    \"TKT_TYP\": \"T\",\r\n    \"DOC_TYP\": \"O\",\r\n    \"USR_ID\": \"{{USR_ID}}\",\r\n    \"PS_DOC_NOTE\": [\r\n      {\r\n        \"NOTE_ID\": \"A1\",\r\n        \"NOTE\": \"This is a note!\"\r\n      }\r\n    ],\r\n    \"PS_DOC_LIN\": [\r\n      {\r\n        \"LIN_TYP\": \"O\",\r\n        \"ITEM_NO\": \"{{ITEM_NO}}\",\r\n        \"PRC\":\"2.333\",\r\n        \"USR_ENTD_PRC\":\"Y\",\r\n        \"QTY_SOLD\": \"4.0\",\r\n        \"UNIT_COST\": \"1.1953\",\r\n        \"PRESUMED_COST\": \"1.1953\"\r\n      }\r\n    ],\r\n    \"PS_DOC_PMT\": [\r\n      {\r\n        \"AMT\": \"3.00\",\r\n        \"PAY_COD\": \"{{PAY_COD}}\",\r\n        \"DESC\": \"{{PAY_COD_DESC}}\",\r\n        \"FINAL_PMT\": \"N\",\r\n        \"CURNCY_COD\": \"HOME\",\r\n        \"PS_DOC_PMT_APPLY\": {\r\n          \"AMT\": \"3.00\",\r\n          \"HOME_CURNCY_AMT\": \"3.00\",\r\n          \"EXCH_LOSS\": \"0\",\r\n          \"APPL_TYP\": \"O\"\r\n        },\r\n        \"PS_DOC_PMT_CR_CARD\": {\r\n          \"CR_CARD_NO\": \"{{CR_CARD_NO}}\",\r\n          \"CR_CARD_NAM\": \"{{CR_CARD_NAM}}\",\r\n          \"AVS_ZIP_COD\": \"{{AVS_ZIP_COD}}\",\r\n          \"CR_CARD_EXP_DAT\": \"{{CR_CARD_EXP_DAT}}\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
-			"owner": "43287"
+			"rawModeData": "{\r\n  \"PS_DOC_HDR\": {\r\n    \"STR_ID\": \"{{STR_ID}}\",\r\n    \"STA_ID\": \"{{STA_ID}}\",\r\n    \"DRW_ID\": \"{{DRW_ID}}\",\r\n    \"TKT_TYP\": \"T\",\r\n    \"DOC_TYP\": \"O\",\r\n    \"USR_ID\": \"{{USR_ID}}\",\r\n    \"PS_DOC_NOTE\": [\r\n      {\r\n        \"NOTE_ID\": \"A1\",\r\n        \"NOTE\": \"This is a note!\"\r\n      }\r\n    ],\r\n    \"PS_DOC_LIN\": [\r\n      {\r\n        \"LIN_TYP\": \"O\",\r\n        \"ITEM_NO\": \"{{ITEM_NO}}\",\r\n        \"PRC\":\"2.333\",\r\n        \"USR_ENTD_PRC\":\"Y\",\r\n        \"QTY_SOLD\": \"4.0\",\r\n        \"UNIT_COST\": \"1.1953\",\r\n        \"PRESUMED_COST\": \"1.1953\"\r\n      }\r\n    ],\r\n    \"PS_DOC_PMT\": [\r\n      {\r\n        \"AMT\": \"3.00\",\r\n        \"PAY_COD\": \"{{PAY_COD}}\",\r\n        \"DESC\": \"{{PAY_COD_DESC}}\",\r\n        \"FINAL_PMT\": \"N\",\r\n        \"CURNCY_COD\": \"HOME\",\r\n        \"PS_DOC_PMT_APPLY\": {\r\n          \"AMT\": \"3.00\",\r\n          \"HOME_CURNCY_AMT\": \"3.00\",\r\n          \"EXCH_LOSS\": \"0\",\r\n          \"APPL_TYP\": \"O\"\r\n        },\r\n        \"PS_DOC_PMT_CR_CARD\": {\r\n          \"CR_CARD_NO\": \"{{CR_CARD_NO}}\",\r\n          \"CR_CARD_NAM\": \"{{CR_CARD_NAM}}\",\r\n          \"AVS_ZIP_COD\": \"{{AVS_ZIP_COD}}\",\r\n          \"CR_CARD_EXP_DAT\": \"{{CR_CARD_EXP_DAT}}\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}"
 		}
 	]
 }

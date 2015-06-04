@@ -33,7 +33,7 @@
 		{
 			"id": "00307599-5dcb-ef94-8365-554f661885c8",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{BAD_ITEM_NO}}/Serial/{{SERIAL_NO}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_ITEM_NO}}/Serial/{{SERIAL_NO}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -53,7 +53,7 @@
 		{
 			"id": "30398bbe-0ce8-2222-fa29-bd01c140bd7f",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{ITEM_NO}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -73,7 +73,7 @@
 		{
 			"id": "32b3e382-5bce-051b-acdc-6fefa240564b",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{DIM_ITEM}}/GridDim1",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{DIM_ITEM}}/GridDim1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -93,7 +93,7 @@
 		{
 			"id": "38c696fb-9178-7b19-e2c3-e3a7ba241219",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{SERIAL_ITEM_NO}}/Serials/Location/{{LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{SERIAL_ITEM_NO}}/Serials/Location/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -113,7 +113,7 @@
 		{
 			"id": "3d81e374-84c3-9c5d-c27c-a44c9629e8d1",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/ItemCategory/{{CAT_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/ItemCategory/{{CAT_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -133,7 +133,7 @@
 		{
 			"id": "620ae2fc-8b40-93f2-e44b-c2edcea4d818",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{DIM_ITEM}}/GridDim3",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{DIM_ITEM}}/GridDim3",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -153,7 +153,7 @@
 		{
 			"id": "8ae5669b-9ed0-399a-07dd-decf591be8e6",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{BAD_ITEM_NO}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_ITEM_NO}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -173,7 +173,7 @@
 		{
 			"id": "a3298d11-7031-c1dd-d9d3-7ffff57f59c8",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{BAD_DIM_ITEM}}/GridDim3",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_DIM_ITEM}}/GridDim3",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -193,7 +193,7 @@
 		{
 			"id": "aa319be4-82ca-99af-072d-8d9e0fdd65ec",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/ItemCategory/{{BAD_CAT_COD}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/ItemCategory/{{BAD_CAT_COD}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -213,7 +213,7 @@
 		{
 			"id": "aff2ff7f-b2f9-4348-ca2d-3fd8b66fcf42",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Items",
+			"url": "{{protocol}}://{{server}}:{{port}}/Items",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -233,7 +233,7 @@
 		{
 			"id": "b1a71aa7-4ea2-1cf1-6b30-369695f16292",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{BAD_DIM_ITEM}}/GridDim1",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_DIM_ITEM}}/GridDim1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -253,7 +253,7 @@
 		{
 			"id": "c2dd40b3-f486-c760-2e85-9200c8cc37d2",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{DIM_ITEM}}/GridDim2",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{DIM_ITEM}}/GridDim2",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -273,7 +273,7 @@
 		{
 			"id": "cad1735d-37c2-2119-1e15-b4217474f366",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{SERIAL_ITEM_NO}}/Serial/{{SERIAL_NO}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{SERIAL_ITEM_NO}}/Serial/{{SERIAL_NO}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -293,7 +293,7 @@
 		{
 			"id": "e2609427-9109-f0a0-4ca6-95873f18d573",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/ItemCategories",
+			"url": "{{protocol}}://{{server}}:{{port}}/ItemCategories",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -313,7 +313,7 @@
 		{
 			"id": "e34dcdb1-0696-110b-568a-effc1e16337a",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{BAD_DIM_ITEM}}/GridDim2",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_DIM_ITEM}}/GridDim2",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

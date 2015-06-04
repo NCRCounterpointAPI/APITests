@@ -19,7 +19,7 @@
 		{
 			"id": "17979ec7-a9ff-f140-5844-c797252aaaf5",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Workgroup/{{BAD_WRK_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Workgroup/{{BAD_WRK_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -38,7 +38,7 @@
 		{
 			"id": "b3bb9bd7-f1d4-0bf7-f0aa-e8569b292189",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Workgroup/{{WRK_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Workgroup/{{WRK_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

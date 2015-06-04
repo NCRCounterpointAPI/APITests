@@ -25,7 +25,7 @@
 		{
 			"id": "02aadd45-f261-e88d-bd44-2b326f8ecee6",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{ITEM_NO}}/Inventory/{{BAD_LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/Inventory/{{BAD_LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -44,7 +44,7 @@
 		{
 			"id": "0e9bb8cf-06f6-748c-5e12-77cc5b89ebd3",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{ITEM_NO}}/Inventory/{{LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/Inventory/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -63,7 +63,7 @@
 		{
 			"id": "1fd8ffb1-4cd0-27b8-7632-806903a2fef0",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{ITEM_NO}}/InventoryLocation/{{LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/InventoryLocation/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -82,7 +82,7 @@
 		{
 			"id": "406edae5-be1f-678a-6d9a-50a8b6573992",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{BAD_ITEM_NO}}/Inventory/{{LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_ITEM_NO}}/Inventory/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -101,7 +101,7 @@
 		{
 			"id": "7cf90c62-407e-2d8c-ebe6-4d5b60005548",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/InventoryControl",
+			"url": "{{protocol}}://{{server}}:{{port}}/InventoryControl",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -120,7 +120,7 @@
 		{
 			"id": "8b15ae78-edd3-12a9-7c0c-9a4aa9ecb5da",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{ITEM_NO}}/InventoryLocation/{{BAD_LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/InventoryLocation/{{BAD_LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -139,7 +139,7 @@
 		{
 			"id": "9c3cb118-d34b-7cf2-161d-90d6c609b5b6",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/{{BAD_ITEM_NO}}/InventoryLocation/{{LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_ITEM_NO}}/InventoryLocation/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -158,7 +158,7 @@
 		{
 			"id": "c8677e54-773a-39ad-3723-52e81edb3ae9",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Item/Inventory/EC",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/Inventory/EC",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

@@ -62,7 +62,7 @@
 		{
 			"id": "57c750f5-df6c-9ead-b9cd-0fbda454986c",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/customer/{{custNo}}/CARD",
+			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}/CARD",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -84,7 +84,7 @@
 		{
 			"id": "62f746fa-f6a6-72da-3987-c19ba26dce19",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/Customer/{{CustNo}}/Note",
+			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Note",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PATCH",
@@ -106,7 +106,7 @@
 		{
 			"id": "6735fb2e-9e28-2a4a-934f-f1946e1ec75a",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Customers",
+			"url": "{{protocol}}://{{server}}:{{port}}/Customers",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -127,7 +127,7 @@
 		{
 			"id": "73022e47-6c26-e90f-5c32-899a55895cb9",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/Customer/{{CustNo}}/NOTE",
+			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/NOTE",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -149,7 +149,7 @@
 		{
 			"id": "7a8f0898-6308-bfcd-9354-7adc1b1022ad",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/CUSTOMER/{{CustNo}}/OpenItems",
+			"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/OpenItems",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -168,7 +168,7 @@
 		{
 			"id": "7b48a93f-14fc-1ad8-9e96-2fd63d95412f",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/customer/{{CustNo}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{CustNo}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PATCH",
@@ -190,7 +190,7 @@
 		{
 			"id": "83a78122-ecd4-de9e-1d0b-b9f906fbd504",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/customer/{{custNo}}/CARD",
+			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}/CARD",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -212,7 +212,7 @@
 		{
 			"id": "83f5de33-9037-3ec3-7177-5c66b70bc225",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/Customer",
+			"url": "{{protocol}}://{{server}}:{{port}}/Customer",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -234,7 +234,7 @@
 		{
 			"id": "8506e616-060c-2075-f1f0-9e0dba254561",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "http://localhost:81/Customer/{{CustNo}}/Address",
+			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -256,7 +256,7 @@
 		{
 			"id": "88e43d0e-35ad-6f22-1b60-21d3423226ca",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Customer/{{CustNo}}/Address?ShipAddressId=WORK",
+			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address?ShipAddressId=WORK",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -278,7 +278,7 @@
 		{
 			"id": "916d8389-22e0-6070-19b8-7798fa63c970",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/CUSTOMER/{{CustNo}}/NOTE?NoteId=Test",
+			"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/NOTE?NoteId=Test",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -300,7 +300,7 @@
 		{
 			"id": "92cce158-0c32-277b-9c35-a7a27e955024",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/customer/{{CustNo}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{CustNo}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -321,7 +321,7 @@
 		{
 			"id": "a3e67d94-9aaf-73be-da32-8d53a7b19aef",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/customer/{{custNo}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -342,7 +342,7 @@
 		{
 			"id": "bc41df57-f52c-9e59-a3b1-e79ee6ec0120",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/customer/{{custNo}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -363,7 +363,7 @@
 		{
 			"id": "db4541c3-d01d-6c8d-6bd7-3e3f16bd8456",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/Customers/EC",
+			"url": "{{protocol}}://{{server}}:{{port}}/Customers/EC",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -384,7 +384,7 @@
 		{
 			"id": "f9029587-6e83-776d-3d3d-1f111027a34e",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "http://localhost:81/CUSTOMER/{{CustNo}}/Address",
+			"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/Address",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PATCH",
