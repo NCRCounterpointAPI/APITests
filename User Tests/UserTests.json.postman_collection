@@ -1,0 +1,59 @@
+{
+	"id": "ce67207c-1611-2a3e-20b6-ddd30ba975a5",
+	"name": "UserTests",
+	"description": "",
+	"order": [
+		"7538f098-118f-e7a3-1ede-371eeb62ff45",
+		"0d13d97a-d204-918c-0bef-a2bd9e7ebae9"
+	],
+	"folders": [],
+	"timestamp": 1429283457319,
+	"owner": "43287",
+	"remoteLink": "",
+	"public": false,
+	"createdAt": null,
+	"updatedAt": null,
+	"synced": false,
+	"requests": [
+		{
+			"id": "0d13d97a-d204-918c-0bef-a2bd9e7ebae9",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "{{protocol}}://{{server}}:{{port}}/User/{{BAD_USR_ID}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 404\"] = responseCode.code === 404;\n\ntests[\"Nice Message\"] = respData.Message === 'User record does not exist for USR_ID ' + data.BAD_USR_ID;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1433270414765,
+			"name": "GET User By ID Not Found",
+			"description": "",
+			"collectionId": "ce67207c-1611-2a3e-20b6-ddd30ba975a5",
+			"synced": false,
+			"owner": "43287"
+		},
+		{
+			"id": "7538f098-118f-e7a3-1ede-371eeb62ff45",
+			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
+			"url": "{{protocol}}://{{server}}:{{port}}/User/{{USR_ID}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"User ID Matches\"] = respData.SY_USR.USR_ID === data.USR_ID;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431623632758,
+			"name": "GET User By ID",
+			"description": "",
+			"collectionId": "ce67207c-1611-2a3e-20b6-ddd30ba975a5",
+			"synced": false,
+			"owner": "43287"
+		}
+	]
+}

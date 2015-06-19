@@ -7,18 +7,37 @@
 		"0e61d570-5a14-6750-5d28-139c2ea94803",
 		"0c4009e1-c80d-864d-fa1f-18444a08061d",
 		"3e736183-c978-7c63-bbf7-705a16628905",
-		"40dfeeb7-ae7a-9618-3e50-cfab0e9eb506"
+		"40dfeeb7-ae7a-9618-3e50-cfab0e9eb506",
+		"0408f384-bbd3-a9a8-09dc-9335c17c33c7"
 	],
 	"folders": [],
 	"timestamp": 1429283367421,
-	"synced": false,
 	"owner": "43287",
-	"sharedWithTeam": false,
-	"subscribed": false,
 	"remoteLink": "",
 	"public": false,
-	"write": true,
+	"createdAt": null,
+	"updatedAt": null,
+	"synced": false,
 	"requests": [
+		{
+			"id": "0408f384-bbd3-a9a8-09dc-9335c17c33c7",
+			"headers": "Authorization: {{Authorization}}\nContent-Type: {{Content-Type}}\n",
+			"url": "{{protocol}}://{{server}}:{{port}}/Stores/Tokenized",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"has data\"] = respData.StoreTokens.length > 0;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1433785212068,
+			"name": "GET Tokenized Stores",
+			"description": "",
+			"collectionId": "02ad9db8-15cc-510c-2127-ff0e7522e6c7",
+			"synced": false
+		},
 		{
 			"id": "0c4009e1-c80d-864d-fa1f-18444a08061d",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
@@ -37,7 +56,8 @@
 			"description": "",
 			"collectionId": "02ad9db8-15cc-510c-2127-ff0e7522e6c7",
 			"responses": [],
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		},
 		{
 			"id": "0e61d570-5a14-6750-5d28-139c2ea94803",
@@ -56,7 +76,8 @@
 			"name": "GET Store Not Found",
 			"description": "",
 			"collectionId": "02ad9db8-15cc-510c-2127-ff0e7522e6c7",
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		},
 		{
 			"id": "3e736183-c978-7c63-bbf7-705a16628905",
@@ -76,7 +97,8 @@
 			"description": "Store found\nStation not found",
 			"collectionId": "02ad9db8-15cc-510c-2127-ff0e7522e6c7",
 			"responses": [],
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		},
 		{
 			"id": "40dfeeb7-ae7a-9618-3e50-cfab0e9eb506",
@@ -96,7 +118,8 @@
 			"description": "Store not found",
 			"collectionId": "02ad9db8-15cc-510c-2127-ff0e7522e6c7",
 			"responses": [],
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		},
 		{
 			"id": "4d046557-6a92-d29d-8ac7-45736f98966b",
@@ -115,7 +138,8 @@
 			"name": "GET Store",
 			"description": "",
 			"collectionId": "02ad9db8-15cc-510c-2127-ff0e7522e6c7",
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		}
 	]
 }

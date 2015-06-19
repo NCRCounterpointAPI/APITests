@@ -2,85 +2,29 @@
 	"id": "b9627a87-c302-7891-a9f4-e003420ba05b",
 	"name": "CustomerTests",
 	"description": "",
-	"order": [],
-	"folders": [
-		{
-			"id": "81184da7-2b46-d171-f075-89e4da1f5941",
-			"name": "Card On File",
-			"description": "Testing",
-			"write": true,
-			"order": [
-				"57c750f5-df6c-9ead-b9cd-0fbda454986c",
-				"bc41df57-f52c-9e59-a3b1-e79ee6ec0120",
-				"83a78122-ecd4-de9e-1d0b-b9f906fbd504",
-				"a3e67d94-9aaf-73be-da32-8d53a7b19aef"
-			],
-			"collection_name": "CustomerTests",
-			"collection_owner": "43287",
-			"collection_id": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"collection": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"owner": "43287",
-			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b"
-		},
-		{
-			"id": "d5021aa7-585c-26dd-3945-8457b7236772",
-			"name": "Customer Gauntlet",
-			"description": "",
-			"write": true,
-			"order": [
-				"83f5de33-9037-3ec3-7177-5c66b70bc225",
-				"7b48a93f-14fc-1ad8-9e96-2fd63d95412f",
-				"92cce158-0c32-277b-9c35-a7a27e955024",
-				"7a8f0898-6308-bfcd-9354-7adc1b1022ad",
-				"73022e47-6c26-e90f-5c32-899a55895cb9",
-				"62f746fa-f6a6-72da-3987-c19ba26dce19",
-				"916d8389-22e0-6070-19b8-7798fa63c970",
-				"8506e616-060c-2075-f1f0-9e0dba254561",
-				"f9029587-6e83-776d-3d3d-1f111027a34e",
-				"88e43d0e-35ad-6f22-1b60-21d3423226ca",
-				"6735fb2e-9e28-2a4a-934f-f1946e1ec75a",
-				"db4541c3-d01d-6c8d-6bd7-3e3f16bd8456"
-			],
-			"collection_name": "CustomerTests",
-			"collection_owner": "43287",
-			"collection_id": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"collection": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"owner": "43287",
-			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b"
-		}
+	"order": [
+		"83f5de33-9037-3ec3-7177-5c66b70bc225",
+		"7b48a93f-14fc-1ad8-9e96-2fd63d95412f",
+		"92cce158-0c32-277b-9c35-a7a27e955024",
+		"7a8f0898-6308-bfcd-9354-7adc1b1022ad",
+		"73022e47-6c26-e90f-5c32-899a55895cb9",
+		"62f746fa-f6a6-72da-3987-c19ba26dce19",
+		"916d8389-22e0-6070-19b8-7798fa63c970",
+		"8506e616-060c-2075-f1f0-9e0dba254561",
+		"f9029587-6e83-776d-3d3d-1f111027a34e",
+		"88e43d0e-35ad-6f22-1b60-21d3423226ca",
+		"6735fb2e-9e28-2a4a-934f-f1946e1ec75a",
+		"db4541c3-d01d-6c8d-6bd7-3e3f16bd8456"
 	],
+	"folders": [],
 	"timestamp": 1428605403006,
-	"synced": false,
 	"owner": "43287",
-	"sharedWithTeam": false,
-	"subscribed": false,
 	"remoteLink": "https://www.getpostman.com/collections/2b2e717b003346e5a086",
 	"public": false,
-	"write": true,
-	"hasRequests": true,
+	"createdAt": null,
+	"updatedAt": null,
+	"synced": false,
 	"requests": [
-		{
-			"id": "57c750f5-df6c-9ead-b9cd-0fbda454986c",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}/CARD",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "tests[\"Successful POST request\"] = responseCode.code === 201;\n\nvar respData = JSON.parse(responseBody);\ntests[\"Reference is set\"] = respData.reference === \"Customer\";\ntests[\"Customer number is returned correctly\"] = respData.CUST_NO === data.custNo;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431460596682,
-			"name": "POST CardOnFile 846",
-			"description": "",
-			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"synced": false,
-			"rawModeData": "{\"AR_CUST_CARD\":{ \n  \n  \"CARD_DESCR\": \"Mark2\",\n  \"DEFAULT_CARD\": \"N\",\n  \"PAY_COD\": \"VISA\",\n  \"CARD_EXP_DAT\": \"1/1/2018\",\n  \"CARD_NO\": \"4275330012345675\",\n  \"CARD_NAM\": \"{{CardName}}\"\n}}",
-			"owner": "43287",
-			"folder": "81184da7-2b46-d171-f075-89e4da1f5941"
-		},
 		{
 			"id": "62f746fa-f6a6-72da-3987-c19ba26dce19",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
@@ -100,8 +44,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "{\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\": \"Test\",\r\n        \"NOTE_TEXT\": \"Updated Note! API Rocks!\"\r\n      }\r\n}",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "6735fb2e-9e28-2a4a-934f-f1946e1ec75a",
@@ -121,8 +64,7 @@
 			"description": "Get all customers",
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "73022e47-6c26-e90f-5c32-899a55895cb9",
@@ -143,8 +85,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "{\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\" : \"Test\",\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Adding a note to an existing customer!\\\\par\\n\\\\par\\\\par\\n}\"\r\n      }\r\n}",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "7a8f0898-6308-bfcd-9354-7adc1b1022ad",
@@ -163,7 +104,8 @@
 			"name": "GET Customer AR Balance",
 			"description": "",
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"synced": false
+			"synced": false,
+			"owner": "43287"
 		},
 		{
 			"id": "7b48a93f-14fc-1ad8-9e96-2fd63d95412f",
@@ -184,30 +126,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "{\r\n  \"AR_CUST\": {\r\n    \"NAM\": \"Billy Madison\",\r\n    \"FST_NAM\": \"Billy\",\r\n    \"LST_NAM\": \"Madison\",\r\n    \"AR_CUST_NOTE\": [\r\n      {\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Have Billy verify his current phone number.  (we could not reach him last week)\\\\par\\n\\\\par\\nAH\\\\par\\n}\"\r\n      }\r\n    ]\r\n  }\r\n}",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
-		},
-		{
-			"id": "83a78122-ecd4-de9e-1d0b-b9f906fbd504",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}/CARD",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "tests[\"Successful POST request\"] = responseCode.code === 201;\n\nvar respData = JSON.parse(responseBody);\ntests[\"Reference is set\"] = respData.reference === \"Customer\";\ntests[\"Customer number is returned correctly\"] = respData.CUST_NO === data.custNo;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614435004,
-			"name": "DELETE CardOnFile 846",
-			"description": "Should fail",
-			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"synced": false,
-			"rawModeData": "",
-			"owner": "43287",
-			"folder": "81184da7-2b46-d171-f075-89e4da1f5941"
+			"owner": "43287"
 		},
 		{
 			"id": "83f5de33-9037-3ec3-7177-5c66b70bc225",
@@ -228,8 +147,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "{\r\n  \"AR_CUST\": {\r\n    \"CUST_TYP\": \"C\",\r\n    \"NAM\": \"Happy Gilmore\",\r\n    \"FST_NAM\": \"Happy\",\r\n    \"LST_NAM\": \"Gilmore\",\r\n    \"SALUTATION\": \"Mr.\",\r\n    \"CUST_NAM_TYP\": \"P\",\r\n    \"SLS_REP\": \"MGR\",\r\n    \"STR_ID\": \"MAIN\",\r\n    \"AR_CUST_NOTE\": [\r\n      {\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Have Bill verify his current phone number.  (we could not reach him last week)\\\\par\\n\\\\par\\nAH\\\\par\\n}\"\r\n      }\r\n    ],\r\n    \"AR_SHIP_ADRS\": [\r\n      {\r\n        \"NAM\": \"Home address\",\r\n        \"SHIP_ADRS_ID\": \"HOME\",\r\n        \"SHIP_NAM_TYP\": \"P\",\r\n        \"FST_NAM\": \"Grandma\",\r\n        \"LST_NAM\": \"Gilmore\",\r\n        \"SALUTATION\": \"Mrs.\",\r\n        \"ADRS_1\": \"1 Waterford Way\",\r\n        \"CITY\": \"Topeka\",\r\n        \"STATE\": \"KA\",\r\n        \"ZIP_COD\": 10101\r\n      }\r\n    ]\r\n  }\r\n}",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "8506e616-060c-2075-f1f0-9e0dba254561",
@@ -250,8 +168,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "{\r\n    \"AR_SHIP_ADRS\":\r\n      {\r\n        \"NAM\": \"WORK Address\",\r\n        \"SHIP_NAM_TYP\":\"B\",\r\n        \"SHIP_ADRS_ID\": \"WORK\",\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Adding a note to an existing customer!\\\\par\\n\\\\par\\\\par\\n}\"\r\n      }\r\n}",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "88e43d0e-35ad-6f22-1b60-21d3423226ca",
@@ -272,8 +189,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "916d8389-22e0-6070-19b8-7798fa63c970",
@@ -294,8 +210,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "92cce158-0c32-277b-9c35-a7a27e955024",
@@ -315,50 +230,7 @@
 			"description": "",
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
-		},
-		{
-			"id": "a3e67d94-9aaf-73be-da32-8d53a7b19aef",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\ntests[\"Customer Number returned is the same\"] = respData.AR_CUST.CUST_NO === data.custNo;\ntests[\"Card Name is has no value\"] = !responseBody.has(respData.AR_CUST[\"CR_CARD_NAM_1\"]);\ntests[\"Card Number has no value\"] = !responseBody.has(respData.AR_CUST[\"CR_CARD_NO_1\"]);",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431460725590,
-			"name": "Verify Card Deleted",
-			"description": "",
-			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"synced": false,
-			"owner": "43287",
-			"folder": "81184da7-2b46-d171-f075-89e4da1f5941"
-		},
-		{
-			"id": "bc41df57-f52c-9e59-a3b1-e79ee6ec0120",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{custNo}}",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\ntests[\"Card Name is new value\"] = respData.AR_CUST.CR_CARD_NAM_1 === data.CardName;\ntests[\"Customer Number returned is the same\"] = respData.AR_CUST.CUST_NO === data.custNo;\ntests[\"Card Number has no value\"] = !responseBody.has(respData.AR_CUST[\"CR_CARD_NO_1\"]);\n",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431460495831,
-			"name": "Verify Card Info",
-			"description": "",
-			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
-			"synced": false,
-			"owner": "43287",
-			"folder": "81184da7-2b46-d171-f075-89e4da1f5941"
+			"owner": "43287"
 		},
 		{
 			"id": "db4541c3-d01d-6c8d-6bd7-3e3f16bd8456",
@@ -378,8 +250,7 @@
 			"description": "",
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		},
 		{
 			"id": "f9029587-6e83-776d-3d3d-1f111027a34e",
@@ -400,8 +271,7 @@
 			"collectionId": "b9627a87-c302-7891-a9f4-e003420ba05b",
 			"synced": false,
 			"rawModeData": "{\r\n    \"AR_SHIP_ADRS\":\r\n      {\r\n        \"NAM\": \"Updated Ship address\",\r\n        \"SHIP_ADRS_ID\": \"WORK\",\r\n        \"ADRS_1\": \"3 Waterford Way\",\r\n        \"ZIP_COD\": 10102\r\n      }\r\n}",
-			"owner": "43287",
-			"folder": "d5021aa7-585c-26dd-3945-8457b7236772"
+			"owner": "43287"
 		}
 	]
 }

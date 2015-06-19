@@ -15,6 +15,7 @@
 	"public": false,
 	"createdAt": null,
 	"updatedAt": null,
+	"hasRequests": true,
 	"synced": false,
 	"requests": [
 		{
@@ -87,10 +88,10 @@
 			"data": [],
 			"dataMode": "raw",
 			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;\n\npostman.setEnvironmentVariable(\"DocId1\", (respData.Documents.filter(\n    function (el)\n    {\n        return el.reference == 'Ticket'; \n    }\n    )[0].DOC_ID));\n\nvar path = environment.protocol + \"://\" + environment.server + \":\" + environment.port + \"/Document/\";\n\ntests[\"Link\"] = respData.Documents[0].Link.uri === path + environment.DocId1;",
+			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;\n\npostman.setEnvironmentVariable(\"DocId1\", (respData.Documents.filter(\n    function (el)\n    {\n        return el.reference == 'Ticket'; \n    }\n    )[0].DOC_ID));\n\nvar path = (environment.protocol + \"://\" + environment.server + \":\" + environment.port + \"/Document/\").toUpperCase();\n\ntests[\"Link\"] = respData.Documents[0].Link.uri.toUpperCase() === path + environment.DocId1;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1433442560125,
+			"time": 1434046534057,
 			"name": "Add Ticket",
 			"description": "For Tickets PS_DOC_TAX information needs to be passed to API",
 			"collectionId": "69e273a3-5f2b-c64a-89fa-dbf9c0f396ee",

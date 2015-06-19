@@ -1,0 +1,14 @@
+[
+	{
+		"CardName1" : "Blooper1",
+		"CardName2" : "Blooper2",
+		"STR_ID" : "MAIN"
+	},
+	{
+		"CardName1" : "Bleh1",
+		"CardName2" : "Bleh2",
+		"STR_ID" : "100"
+	},
+	{
+	}
+]
