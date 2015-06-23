@@ -1,0 +1,16 @@
+[
+	{
+		"CompanyName": "QATestGolf846",
+		"AdminUser": "MGR",
+		"AdminUser2": "MGR2",
+		"FakeUser": "Superman"
+	},
+	{
+		"CompanyName": "QATestGolf",
+		"AdminUser": "MGR",
+		"AdminUser2": "MGR2",
+		"FakeUser": "Superman"
+	},
+	{
+	}
+]
