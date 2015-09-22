@@ -58,7 +58,7 @@
 		{
 			"id": "468b6fff-ecfa-4e3b-008c-99ae9cea92d3",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/InventoryLocation/{{LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/InventoryCost/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -68,7 +68,7 @@
 			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"ITEM_NO Matches\"] = respData.IM_INV_LOC.ITEM_NO === data.ITEM_NO;\ntests[\"LOC_ID Matches\"] = respData.IM_INV_LOC.LOC_ID === data.LOC_ID;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1431630121437,
+			"time": 1442945403865,
 			"name": "GET Inventory Cost",
 			"description": "",
 			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36"
