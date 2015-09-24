@@ -79,7 +79,7 @@
 		{
 			"id": "47cb754f-15b2-1ec2-4954-828e0130c68b",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Inventory/EAST?subcatcod=snacks",
+			"url": "{{protocol}}://{{server}}:{{port}}/Inventory/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -88,14 +88,11 @@
 			"version": 2,
 			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
 			"currentHelper": "normal",
-			"helperAttributes": "{}",
-			"time": 1443117865490,
+			"helperAttributes": {},
+			"time": 1443119540946,
 			"name": "GET Inventory by Location",
 			"description": "",
-			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36",
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"folder": null
+			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36"
 		},
 		{
 			"id": "50272765-a173-dc40-4fea-8f246f74c339",
