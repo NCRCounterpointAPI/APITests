@@ -40,7 +40,7 @@
 		{
 			"id": "3a636581-f37e-3010-49dd-382f12841c2d",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Item/Inventory/EC",
+			"url": "{{protocol}}://{{server}}:{{port}}/Inventory/EC",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -49,11 +49,14 @@
 			"version": 2,
 			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Has INV\"] = respData.IM_INV.length > 0;",
 			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431629555566,
+			"helperAttributes": "{}",
+			"time": 1443109707125,
 			"name": "GET Inventory eCommerce",
 			"description": "",
-			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36"
+			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36",
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"folder": null
 		},
 		{
 			"id": "468b6fff-ecfa-4e3b-008c-99ae9cea92d3",
@@ -76,7 +79,7 @@
 		{
 			"id": "47cb754f-15b2-1ec2-4954-828e0130c68b",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Item/Inventory/EAST?subcatcod=snacks",
+			"url": "{{protocol}}://{{server}}:{{port}}/Inventory/EAST?subcatcod=snacks",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -85,16 +88,19 @@
 			"version": 2,
 			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
 			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1442944872036,
+			"helperAttributes": "{}",
+			"time": 1443117865490,
 			"name": "GET Inventory by Location",
 			"description": "",
-			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36"
+			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36",
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"folder": null
 		},
 		{
 			"id": "50272765-a173-dc40-4fea-8f246f74c339",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/InventoryLocation/{{BAD_LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{ITEM_NO}}/InventoryCost/{{BAD_LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -103,11 +109,14 @@
 			"version": 2,
 			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 404\"] = responseCode.code === 404;\n\ntests[\"Nice Message\"] = respData.Message === 'Inventory location record does not exist for item ' + data.ITEM_NO + ' location ' + data.BAD_LOC_ID;\ntests[\"Error Code\"] = respData.ErrorCode === 'ERROR_RECORD_NOT_FOUND';",
 			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431630443572,
-			"name": "GET Inventory Location - Invalid LOC_ID",
+			"helperAttributes": "{}",
+			"time": 1443117818064,
+			"name": "GET Inventory Cost - Invalid LOC_ID",
 			"description": "Valid ITEM_NO\nInvalid LOC_ID",
-			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36"
+			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36",
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"folder": null
 		},
 		{
 			"id": "5640cd79-77b8-f997-a9d1-62784e486e07",
@@ -130,7 +139,7 @@
 		{
 			"id": "9727d277-22b7-2e89-7e6b-a0c7a249dd99",
 			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_ITEM_NO}}/InventoryLocation/{{LOC_ID}}",
+			"url": "{{protocol}}://{{server}}:{{port}}/Item/{{BAD_ITEM_NO}}/InventoryCost/{{LOC_ID}}",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -139,11 +148,14 @@
 			"version": 2,
 			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 404\"] = responseCode.code === 404;\n\ntests[\"Nice Message\"] = respData.Message === 'Inventory location record does not exist for item ' + data.BAD_ITEM_NO + ' location ' + data.LOC_ID;\ntests[\"Error Code\"] = respData.ErrorCode === 'ERROR_RECORD_NOT_FOUND';",
 			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431630441283,
-			"name": "GET Inventory Location - Invalid Item_No",
+			"helperAttributes": "{}",
+			"time": 1443117799617,
+			"name": "GET Inventory Cost - Invalid Item_No",
 			"description": "Invalid ITEM_NO",
-			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36"
+			"collectionId": "485c6fbb-3842-5719-5238-bc0685321b36",
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"folder": null
 		},
 		{
 			"id": "99d978ba-e63f-4a48-da48-8f5fd0dfe143",
