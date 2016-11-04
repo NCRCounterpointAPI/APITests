@@ -1,14 +1,22 @@
 [
 	{
 		"custNo" : "1000",
-		"CardName" : "Blooper2"
+		"CardName" : "Blooper2",
+		"CardSeqNo" : "1"
 	},
 	{
 		"custNo" : "1000",
-		"CardName" : "Blooper3"
+		"CardName" : "Blooper3",
+		"CardSeqNo" : "1"
 	},
 	{
 		"custNo" : "1000",
-		"CardName" : "Blooper4"
+		"CardName" : "Blooper4",
+		"CardSeqNo" : "1"
+	},
+	{
+		"custNo" : "1000",
+		"CardName" : "Blooper4",
+		"CardSeqNo" : "1"
 	}
 ]
