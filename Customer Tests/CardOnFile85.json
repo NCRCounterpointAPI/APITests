@@ -2,12 +2,14 @@
 	{
 		"CardName1" : "Blooper1",
 		"CardName2" : "Blooper2",
-		"STR_ID" : "MAIN"
+		"STR_ID" : "MAIN",
+		"CardSeqNo" : "2"
 	},
 	{
 		"CardName1" : "Bleh1",
 		"CardName2" : "Bleh2",
-		"STR_ID" : "100"
+		"STR_ID" : "100",
+		"CardSeqNo" : "2"
 	},
 	{
 	}
