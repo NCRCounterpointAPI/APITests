@@ -9,7 +9,7 @@
 		"CR_CARD_NO" : "4111111111111111",
 		"CR_CARD_NAM" : "JOHN DOE",
 		"AVS_ZIP_COD" : "32606",
-		"CR_CARD_EXP_DAT" : "12/2015",
+		"CR_CARD_EXP_DAT" : "12/2018",
 		"USR_ID": "MGR"
 	},
 	{
@@ -22,7 +22,7 @@
 		"CR_CARD_NO" : "4111111111111111",
 		"CR_CARD_NAM" : "JOHN DOE",
 		"AVS_ZIP_COD" : "32606",
-		"CR_CARD_EXP_DAT" : "12/2015",
+		"CR_CARD_EXP_DAT" : "12/2018",
 		"USR_ID": "MGR"
 	},
 	{
