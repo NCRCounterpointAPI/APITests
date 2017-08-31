@@ -1,284 +1,523 @@
 {
-	"id": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-	"name": "CustomerTests",
-	"description": "",
-	"order": [
-		"155c6efd-ae82-9e4c-e2b9-ab7bf594f333",
-		"8b4ed1e7-f945-7cac-5702-4f1d64a22d15",
-		"cbf4a860-f21a-602f-8340-84637208a44e",
-		"ce39f13f-a831-57ed-a6b7-9ec40db065f5",
-		"d5cf8c56-bcae-711d-82ad-334c85a4dae6",
-		"abdb1fa0-9f4b-5b84-e860-285e9054ba36",
-		"72ee1ebe-cef5-bf86-225e-10fae5c2f743",
-		"693a6fa6-8da4-2c6f-42c3-9fa54ec57e14",
-		"027e9ec9-7e76-7d4a-96d7-2c29c2b14e37",
-		"f6cb8cd2-20ff-b27d-ba3b-57e06cb3ecd3",
-		"8955c29a-cae9-71d3-a23e-6c78202efa27",
-		"2f4f44eb-a44c-fbaf-d148-9a648370309e"
-	],
-	"folders": [],
-	"timestamp": 1428605403006,
-	"owner": "43287",
-	"public": false,
-	"folders_order": [],
-	"hasRequests": true,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "CustomerTests",
+		"_postman_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "027e9ec9-7e76-7d4a-96d7-2c29c2b14e37",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/Address",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "PATCH",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614512169,
-			"name": "PATCH Shipping Address",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "{\r\n    \"AR_SHIP_ADRS\":\r\n      {\r\n        \"NAM\": \"Updated Ship address\",\r\n        \"SHIP_ADRS_ID\": \"WORK\",\r\n        \"ADRS_1\": \"3 Waterford Way\",\r\n        \"ZIP_COD\": 10102\r\n      }\r\n}",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
-		},
-		{
-			"id": "155c6efd-ae82-9e4c-e2b9-ab7bf594f333",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Customer",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;\n\npostman.setEnvironmentVariable(\"CustNo\", respData.CUST_NO);",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614445761,
 			"name": "POST Customer",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "{\r\n  \"AR_CUST\": {\r\n    \"CUST_TYP\": \"C\",\r\n    \"NAM\": \"Happy Gilmore\",\r\n    \"FST_NAM\": \"Happy\",\r\n    \"LST_NAM\": \"Gilmore\",\r\n    \"SALUTATION\": \"Mr.\",\r\n    \"CUST_NAM_TYP\": \"P\",\r\n    \"SLS_REP\": \"MGR\",\r\n    \"STR_ID\": \"MAIN\",\r\n    \"AR_CUST_NOTE\": [\r\n      {\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Have Bill verify his current phone number.  (we could not reach him last week)\\\\par\\n\\\\par\\nAH\\\\par\\n}\"\r\n      }\r\n    ],\r\n    \"AR_SHIP_ADRS\": [\r\n      {\r\n        \"NAM\": \"Home address\",\r\n        \"SHIP_ADRS_ID\": \"HOME\",\r\n        \"SHIP_NAM_TYP\": \"P\",\r\n        \"FST_NAM\": \"Grandma\",\r\n        \"LST_NAM\": \"Gilmore\",\r\n        \"SALUTATION\": \"Mrs.\",\r\n        \"ADRS_1\": \"1 Waterford Way\",\r\n        \"CITY\": \"Topeka\",\r\n        \"STATE\": \"KA\",\r\n        \"ZIP_COD\": 10101\r\n      }\r\n    ]\r\n  }\r\n}",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
-		},
-		{
-			"id": "2f4f44eb-a44c-fbaf-d148-9a648370309e",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Customers/EC",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614527132,
-			"name": "GET ECommerce Customers",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
-		},
-		{
-			"id": "693a6fa6-8da4-2c6f-42c3-9fa54ec57e14",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614503645,
-			"name": "POST Shipping Address",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "{\r\n    \"AR_SHIP_ADRS\":\r\n      {\r\n        \"NAM\": \"WORK Address\",\r\n        \"SHIP_NAM_TYP\":\"B\",\r\n        \"SHIP_ADRS_ID\": \"WORK\",\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Adding a note to an existing customer!\\\\par\\n\\\\par\\\\par\\n}\"\r\n      }\r\n}",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
-		},
-		{
-			"id": "72ee1ebe-cef5-bf86-225e-10fae5c2f743",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/NOTE?NoteId=Test",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614495773,
-			"name": "DELETE Customer Note",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
-		},
-		{
-			"id": "8955c29a-cae9-71d3-a23e-6c78202efa27",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Customers",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614522667,
-			"name": "GET Customers",
-			"description": "Get all customers",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
-		},
-		{
-			"id": "8b4ed1e7-f945-7cac-5702-4f1d64a22d15",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{CustNo}}",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "PATCH",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;\n\n//note that a Customer PATCH request does not accept the NOTE, CARD, or ADRS objects.",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614458073,
-			"name": "PATCH Customer",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "{\r\n  \"AR_CUST\": {\r\n    \"NAM\": \"Billy Madison\",\r\n    \"FST_NAM\": \"Billy\",\r\n    \"LST_NAM\": \"Madison\",\r\n    \"AR_CUST_NOTE\": [\r\n      {\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Have Billy verify his current phone number.  (we could not reach him last week)\\\\par\\n\\\\par\\nAH\\\\par\\n}\"\r\n      }\r\n    ]\r\n  }\r\n}",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
-		},
-		{
-			"id": "abdb1fa0-9f4b-5b84-e860-285e9054ba36",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"headerData": [
+			"event": [
 				{
-					"key": "Authorization",
-					"value": "{{Authorization}}",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "APIKey",
-					"value": "{{APIKey}}",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 201;",
+							"",
+							"postman.setEnvironmentVariable(\"CustNo\", respData.CUST_NO);"
+						]
+					}
 				}
 			],
-			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Note",
-			"queryParams": [],
-			"preRequestScript": "",
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "PATCH",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;\n\n//Mark should this fail?  What note are we updating?",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1504190167211,
-			"name": "PATCH Customer Note",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "{\r\n\t\"NoteID\": \"ACCOUNT\",\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\": \"Test\",\r\n        \"NOTE_TXT\": \"Updated Note! API Rocks!\"\r\n      }\r\n}"
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/Customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"AR_CUST\": {\r\n    \"CUST_TYP\": \"C\",\r\n    \"NAM\": \"Happy Gilmore\",\r\n    \"FST_NAM\": \"Happy\",\r\n    \"LST_NAM\": \"Gilmore\",\r\n    \"SALUTATION\": \"Mr.\",\r\n    \"CUST_NAM_TYP\": \"P\",\r\n    \"SLS_REP\": \"MGR\",\r\n    \"STR_ID\": \"MAIN\",\r\n    \"AR_CUST_NOTE\": [\r\n      {\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Have Bill verify his current phone number.  (we could not reach him last week)\\\\par\\n\\\\par\\nAH\\\\par\\n}\"\r\n      }\r\n    ],\r\n    \"AR_SHIP_ADRS\": [\r\n      {\r\n        \"NAM\": \"Home address\",\r\n        \"SHIP_ADRS_ID\": \"HOME\",\r\n        \"SHIP_NAM_TYP\": \"P\",\r\n        \"FST_NAM\": \"Grandma\",\r\n        \"LST_NAM\": \"Gilmore\",\r\n        \"SALUTATION\": \"Mrs.\",\r\n        \"ADRS_1\": \"1 Waterford Way\",\r\n        \"CITY\": \"Topeka\",\r\n        \"STATE\": \"KA\",\r\n        \"ZIP_COD\": 10101\r\n      }\r\n    ]\r\n  }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "cbf4a860-f21a-602f-8340-84637208a44e",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/customer/{{CustNo}}",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614464857,
+			"name": "PATCH Customer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 201;",
+							"",
+							"//note that a Customer PATCH request does not accept the NOTE, CARD, or ADRS objects."
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/customer/{{CustNo}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"AR_CUST\": {\r\n    \"NAM\": \"Billy Madison\",\r\n    \"FST_NAM\": \"Billy\",\r\n    \"LST_NAM\": \"Madison\",\r\n    \"AR_CUST_NOTE\": [\r\n      {\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Have Billy verify his current phone number.  (we could not reach him last week)\\\\par\\n\\\\par\\nAH\\\\par\\n}\"\r\n      }\r\n    ]\r\n  }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "GET Customer",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/customer/{{CustNo}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "{{Content-Type}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "ce39f13f-a831-57ed-a6b7-9ec40db065f5",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/OpenItems",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"No AR_OPN_ITEMs\"] = respData.AR_OPN_ITEM.length === 0;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431702751110,
 			"name": "GET Customer AR Balance",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"tests[\"No AR_OPN_ITEMs\"] = respData.AR_OPN_ITEM.length === 0;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/OpenItems",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "{{Content-Type}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "d5cf8c56-bcae-711d-82ad-334c85a4dae6",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: application/json\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/NOTE",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Successful POST request\"] = responseCode.code === 201;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614479575,
 			"name": "POST Customer Note",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "{\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\" : \"Test\",\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Adding a note to an existing customer!\\\\par\\n\\\\par\\\\par\\n}\"\r\n      }\r\n}",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/NOTE",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\" : \"Test\",\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Adding a note to an existing customer!\\\\par\\n\\\\par\\\\par\\n}\"\r\n      }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "f6cb8cd2-20ff-b27d-ba3b-57e06cb3ecd3",
-			"headers": "Authorization: {{Authorization}}\nAPIKey: {{APIKey}}\nContent-Type: {{Content-Type}}\n",
-			"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address?ShipAddressId=WORK",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "var respData = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1431614518036,
+			"name": "PATCH Customer Note",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 201;",
+							"",
+							"//Mark should this fail?  What note are we updating?"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Note",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"NoteID\": \"ACCOUNT\",\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\": \"Test\",\r\n        \"NOTE_TXT\": \"Updated Note! API Rocks!\"\r\n      }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Customer Note",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/NOTE?NoteId=Test",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "{{Content-Type}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Shipping Address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AR_SHIP_ADRS\":\r\n      {\r\n        \"NAM\": \"WORK Address\",\r\n        \"SHIP_NAM_TYP\":\"B\",\r\n        \"SHIP_ADRS_ID\": \"WORK\",\r\n        \"NOTE\": \"{\\\\rtf1\\\\ansi\\\\deff0{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Arial;}}\\n\\\\viewkind4\\\\uc1\\\\pard\\\\lang1033\\\\fs16 Adding a note to an existing customer!\\\\par\\n\\\\par\\\\par\\n}\"\r\n      }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Shipping Address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/Address",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "{{Content-Type}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AR_SHIP_ADRS\":\r\n      {\r\n        \"NAM\": \"Updated Ship address\",\r\n        \"SHIP_ADRS_ID\": \"WORK\",\r\n        \"ADRS_1\": \"3 Waterford Way\",\r\n        \"ZIP_COD\": 10102\r\n      }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "DELETE Shipping Address",
-			"description": "",
-			"collectionId": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
-			"rawModeData": "",
-			"collection_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0"
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address?ShipAddressId=WORK",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "{{Content-Type}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Customers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/Customers",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "{{Content-Type}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get all customers"
+			},
+			"response": []
+		},
+		{
+			"name": "GET ECommerce Customers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var respData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/Customers/EC",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "APIKey",
+						"value": "{{APIKey}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "{{Content-Type}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
