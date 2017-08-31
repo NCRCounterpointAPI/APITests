@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "CustomerTests",
-		"_postman_id": "ae0484a2-b378-203c-9dee-b99e1ae778e0",
+		"_postman_id": "a5741a2d-5f83-9945-4142-1207857a0ad7",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -132,7 +132,10 @@
 						"description": ""
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": ""
 			},
 			"response": []
@@ -174,7 +177,10 @@
 						"description": ""
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": ""
 			},
 			"response": []
@@ -261,7 +267,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"NoteID\": \"ACCOUNT\",\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\": \"Test\",\r\n        \"NOTE_TXT\": \"Updated Note! API Rocks!\"\r\n      }\r\n}"
+					"raw": "{\r\n\t\"NoteID\": \"Test\",\r\n    \"AR_CUST_NOTE\":\r\n      {\r\n        \"NOTE_ID\": \"UpdatedID\",\r\n        \"NOTE_TXT\": \"Updated Note! API Rocks!\"\r\n      }\r\n}"
 				},
 				"description": ""
 			},
@@ -283,7 +289,26 @@
 				}
 			],
 			"request": {
-				"url": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/NOTE?NoteId=Test",
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/CUSTOMER/{{CustNo}}/NOTE?NoteId=Test",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"CUSTOMER",
+						"{{CustNo}}",
+						"NOTE"
+					],
+					"query": [
+						{
+							"key": "NoteId",
+							"value": "Test"
+						}
+					],
+					"variable": []
+				},
 				"method": "DELETE",
 				"header": [
 					{
@@ -412,7 +437,26 @@
 				}
 			],
 			"request": {
-				"url": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address?ShipAddressId=WORK",
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/Customer/{{CustNo}}/Address?ShipAddressId=WORK",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"Customer",
+						"{{CustNo}}",
+						"Address"
+					],
+					"query": [
+						{
+							"key": "ShipAddressId",
+							"value": "WORK"
+						}
+					],
+					"variable": []
+				},
 				"method": "DELETE",
 				"header": [
 					{
@@ -474,7 +518,10 @@
 						"description": ""
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": "Get all customers"
 			},
 			"response": []
@@ -514,7 +561,10 @@
 						"description": ""
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": ""
 			},
 			"response": []
